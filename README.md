@@ -1,4 +1,4 @@
-# CCC PLUS Examination Question Bank
+# CCC PLUS Examination Question Banks
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen?logo=github)](https://rahul-120.github.io/CCC-PLUS/)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)](https://github.com/rahul-120/CCC-PLUS/blob/main/LICENSE)
