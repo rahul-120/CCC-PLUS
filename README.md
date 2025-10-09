@@ -3,15 +3,16 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen?logo=github)](https://rahul-120.github.io/CCC-PLUS/)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)](https://github.com/rahul-120/CCC-PLUS/blob/main/LICENSE)
 
-This repository hosts a comprehensive question bank for the **CCC PLUS Examination** by **NIELIT**, designed to help students prepare effectively. The question bank contains **100 questions** covering topics such as Computer Fundamentals, Operating Systems, Word Processing, Spreadsheets, Internet and Communication, Digital Financial Services, Cybersecurity, and more.
+This repository hosts a **comprehensive question bank** for the **CCC PLUS Examination** by **NIELIT**, designed to help students prepare effectively. The collection includes **multiple question sets** (Set 1, Set 2, Set 3), each containing **100 questions** from topics such as Computer Fundamentals, Operating Systems, Word Processing, Spreadsheets, Internet & Communication, Digital Financial Services, and Cybersecurity.
 
-The question bank is presented in a **clean, responsive, and print-friendly** web application built with **React**, **Tailwind CSS**, and hosted on **GitHub Pages**.
+The project provides a **clean, responsive web interface** built using **HTML5**, **CSS3**, and **vanilla JavaScript**, hosted on **GitHub Pages**.
 
 ---
 
 ## 📚 Features
 
-- **100 Questions**: Organized into sections including:
+- **Multiple Question Sets**: Organized into separate HTML files (Set 1, Set 2, Set 3)
+- **Topic Coverage**:
   - Computer Fundamentals
   - Operating Systems
   - Word Processing
@@ -19,10 +20,9 @@ The question bank is presented in a **clean, responsive, and print-friendly** we
   - Internet & Communication
   - Digital Financial Services
   - Cybersecurity
-- **Responsive Design**: Fully accessible on desktops, tablets, and mobile devices.
-- **Print-Friendly**: Easily save the entire question bank as a PDF using your browser’s print functionality.
-- **Self-Contained**: No external dependencies beyond CDN-hosted libraries (React, ReactDOM, Tailwind CSS).
-- **Offline Study**: Download as PDF for offline access or print a hard copy.
+- **Responsive Interface**: Works smoothly on desktop, tablet, and mobile screens.
+- **Downloadable Sets**: Each question paper can be downloaded directly as HTML or saved as PDF.
+- **Lightweight Design**: Fast loading with no external dependencies.
 
 > **Copyright**: © 2025 NIELIT. All rights reserved.
 
@@ -30,28 +30,26 @@ The question bank is presented in a **clean, responsive, and print-friendly** we
 
 ## 🔗 Accessing the Question Bank
 
-The question bank is hosted on GitHub Pages and can be accessed at:  
+Access the live site here:  
 👉 [https://rahul-120.github.io/CCC-PLUS/](https://rahul-120.github.io/CCC-PLUS/)
+
+Each question set is listed on the main **index page**, linking to its individual HTML file.
 
 ---
 
 ## 🧭 How to Use
 
-### 1. Visit the Webpage
-- Open the link above in any modern web browser (Chrome, Firefox, Edge, Safari, etc.).
-- Browse through the categorized questions and their answers.
+### 1. Open the Question Bank
+- Visit the main page using the link above.
+- Choose any question set (Set 1, Set 2, or Set 3).
 
-### 2. Save as PDF
-- Click the **Print / Save as PDF** button on the webpage, **or**
+### 2. View or Download
+- **View Online:** Click *Open Set* to view questions in your browser.
+- **Download:** Click *Download* to save the question set locally.
+
+### 3. Save as PDF (Optional)
 - Press `Ctrl + P` (Windows/Linux) or `Cmd + P` (macOS).
-- In the print dialog:
-  - Choose **Destination** → **Save as PDF**
-  - Click **Save** and select your desired location.
-- The generated PDF maintains a clean, professional layout with proper formatting and page breaks.
-
-### 3. Study Offline
-- Use the downloaded PDF for offline revision.
-- Print it for a physical study copy.
+- Select **Save as PDF** from print options.
 
 ---
 
@@ -59,54 +57,55 @@ The question bank is hosted on GitHub Pages and can be accessed at:
 
 | File | Description |
 |------|-------------|
-| `index.html` | Main single-page React application containing the full question bank |
-| `README.md` | This documentation file |
+| `index.html` | Main landing page with links to all question sets |
+| `set1.html` | Question Bank — Set 1 |
+| `set2.html` | Question Bank — Set 2 |
+| `set3.html` | Question Bank — Set 3 |
+| `README.md` | Project documentation (this file) |
 
 ---
 
-## ⚙️ Development Details
+## ⚙️ Technical Details
 
-### Technologies Used
-- **React**: For building the interactive UI (via CDN)
-- **Tailwind CSS**: For responsive, utility-first styling (via CDN)
-- **Babel Standalone**: For in-browser JSX transformation
-- **CDNs**: All dependencies loaded from `cdn.jsdelivr.net`
+### Built With
+- **HTML5** for structure
+- **CSS3 (Flexbox & Grid)** for layout
+- **Vanilla JS** for navigation and interactivity
 
 ### Hosting
-- Deployed via **GitHub Pages** for zero-cost, reliable access.
+- Deployed using **GitHub Pages** under the repository: [rahul-120/CCC-PLUS](https://github.com/rahul-120/CCC-PLUS)
 
 ### Print Optimization
-- Custom CSS `@media print` rules hide non-essential elements (e.g., print button).
-- Semantic HTML and proper page-break controls ensure clean PDF output.
+- Built-in CSS ensures clean formatting when saving or printing question sets.
 
 ---
 
 ## 🤝 Contributing
 
-This project is maintained for **educational purposes**. If you find errors or have suggestions:
+Contributions are welcome! If you’d like to improve or correct questions:
 
-1. **Fork** the repository.
-2. Make your changes in your fork.
-3. Submit a **Pull Request** with a clear description of your updates.
+1. **Fork** this repository.
+2. Edit or add new question sets.
+3. Submit a **Pull Request** with clear descriptions.
 
-> Note: All content is based on official NIELIT CCC PLUS syllabus. Please ensure accuracy before submitting corrections.
+> All questions are based on the official **NIELIT CCC PLUS syllabus**.
 
 ---
 
 ## 📜 License
 
 © 2025 **NIELIT**. All rights reserved.  
-This question bank is provided **for educational purposes only**.  
-**Unauthorized distribution, modification, or commercial use is strictly prohibited.**
+Provided for **educational purposes only**.  
+**Unauthorized reproduction, modification, or redistribution** is prohibited.
 
 ---
 
 ## 📬 Contact
 
-For queries, issues, or feedback:
-- Open an **[Issue](https://github.com/rahul-120/CCC-PLUS/issues)** on this repository.
+For issues or feedback:
+- Open an **[Issue](https://github.com/rahul-120/CCC-PLUS/issues)** on GitHub.
 
 ---
 
-> Prepared for the **CCC PLUS Examination** by **NIELIT**.  
-> Maintained with ❤️ for aspiring learners.
+> **Prepared for the CCC PLUS Examination by NIELIT**  
+> Maintained with ❤️ for students and lifelong learners.
