@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCC PLUS Examination Question Bank</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- React and ReactDOM CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+  <!-- Babel for JSX support -->
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+  <style>
+    @media print {
+      .no-print { display: none; }
+      body { background: white; margin: 0; padding: 0; }
+      .container { padding: 20px; }
+      .page-break { page-break-before: always; }
+    }
+    body { font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    function CCCQuestionsDoc() {
+      return (
+        <div className="max-w-4xl mx-auto p-8 bg-white min-h-screen">
+          <div className="mb-6 text-center border-b-2 border-gray-800 pb-4">
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">CCC PLUS EXAMINATION</h1>
+            <h2 className="text-xl font-semibold text-gray-700">Question Bank</h2>
+          </div>
+
+          <div className="space-y-6">
+            {/* Introduction to Computer & Basic Concepts */}
+            <section className="mb-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Introduction to Computer & Basic Concepts</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">1. What are the main characteristics of a computer system?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Speed, Accuracy, Diligence</p>
+                    <p>b) Cost, Size, Weight</p>
+                    <p>c) Color, Shape, Design</p>
+                    <p>d) Brand, Model, Year</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Speed, Accuracy, Diligence</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">2. Which device is used for pointing and selecting items on the screen?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Keyboard</p>
+                    <p>b) Mouse</p>
+                    <p>c) Printer</p>
+                    <p>d) Scanner</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Mouse</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">3. What is VDU?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Visual Display Unit</p>
+                    <p>b) Video Data Utility</p>
+                    <p>c) Virtual Disk Unit</p>
+                    <p>d) Voltage Distribution Unit</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Visual Display Unit</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">4. Computer memory is divided into primary and secondary memory. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">5. What is system software?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Software that manages hardware</p>
+                    <p>b) Software for specific tasks</p>
+                    <p>c) User applications</p>
+                    <p>d) Games</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Software that manages hardware</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">6. Programming languages are used to write software. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">7. Data is represented in computers using binary system. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">8. What is data processing?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Converting raw data into information</p>
+                    <p>b) Storing data</p>
+                    <p>c) Deleting data</p>
+                    <p>d) Printing data</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Converting raw data into information</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">9. Hardware refers to the physical parts of a computer. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">10. Application software includes word processors and spreadsheets. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Operating System */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Operating System</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">11. What is an operating system?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Software that manages computer hardware</p>
+                    <p>b) Application software</p>
+                    <p>c) Hardware component</p>
+                    <p>d) Input device</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Software that manages computer hardware</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">12. Examples of popular operating systems include Linux and Windows. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">13. What is the Task Bar in Windows?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Bar at the bottom of the screen</p>
+                    <p>b) Menu bar</p>
+                    <p>c) Title bar</p>
+                    <p>d) Scroll bar</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Bar at the bottom of the screen</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">14. How do you change the system date and time in Windows?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Through Control Panel</p>
+                    <p>b) Through My Computer</p>
+                    <p>c) Through Recycle Bin</p>
+                    <p>d) Through Browser</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Through Control Panel</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">15. File extensions indicate the type of file. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">16. What is Windows Explorer used for?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Managing files and folders</p>
+                    <p>b) Browsing internet</p>
+                    <p>c) Editing images</p>
+                    <p>d) Playing music</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Managing files and folders</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">17. You can recover deleted files from Recycle Bin. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">18. Automatic updates help keep software secure. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">19. What is a shortcut on desktop?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Link to a file or program</p>
+                    <p>b) Actual file</p>
+                    <p>c) Folder</p>
+                    <p>d) Image</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Link to a file or program</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">20. Changing display properties adjusts screen resolution. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Word Processing */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Word Processing</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">21. What is the menu bar in a word processor?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Bar with commands like File, Edit</p>
+                    <p>b) Status bar</p>
+                    <p>c) Scroll bar</p>
+                    <p>d) Title bar</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Bar with commands like File, Edit</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">22. How do you save a document as a different file?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Save As</p>
+                    <p>b) Save</p>
+                    <p>c) Print</p>
+                    <p>d) Close</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Save As</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">23. Spell check helps correct spelling errors. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">24. What is paragraph indenting?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Adding space at the beginning of paragraph</p>
+                    <p>b) Changing font</p>
+                    <p>c) Adding bullets</p>
+                    <p>d) Inserting table</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Adding space at the beginning of paragraph</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">25. You can change page margins in Page Setup. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">26. Tables can be drawn in word processors. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">27. What is a watermark?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Faint image in background</p>
+                    <p>b) Header</p>
+                    <p>c) Footer</p>
+                    <p>d) Border</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Faint image in background</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">28. Mail Merge is used for personalized documents. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">29. Macros automate repetitive tasks. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">30. Thesaurus provides synonyms. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Spreadsheets */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Spreadsheets</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">31. What is a cell in a spreadsheet?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Intersection of row and column</p>
+                    <p>b) Row</p>
+                    <p>c) Column</p>
+                    <p>d) Sheet</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Intersection of row and column</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">32. How do you create a series of numbers?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Drag the fill handle</p>
+                    <p>b) Copy paste</p>
+                    <p>c) Insert row</p>
+                    <p>d) Delete cell</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Drag the fill handle</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">33. AutoSum is used for quick summation. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">34. What is a relative cell reference?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Changes when copied</p>
+                    <p>b) Stays the same</p>
+                    <p>c) Absolute</p>
+                    <p>d) Fixed</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Changes when copied</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">35. Charts visualize data. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">36. You can insert graphics in spreadsheets. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">37. What is the AVERAGE function for?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Calculate mean</p>
+                    <p>b) Sum</p>
+                    <p>c) Maximum</p>
+                    <p>d) Minimum</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Calculate mean</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">38. Formulas start with = sign. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">39. You can change cell width. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">40. SmartArt is for diagrams. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Presentations */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Presentations</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">41. What is PowerPoint used for?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Creating presentations</p>
+                    <p>b) Spreadsheets</p>
+                    <p>c) Databases</p>
+                    <p>d) Word processing</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Creating presentations</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">42. You can create a presentation using a template. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">43. How do you insert a slide?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Insert menu</p>
+                    <p>b) File menu</p>
+                    <p>c) Edit menu</p>
+                    <p>d) View menu</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Insert menu</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">44. Clip Art can be added to slides. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">45. What is slide transition?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Effect when changing slides</p>
+                    <p>b) Slide layout</p>
+                    <p>c) Text animation</p>
+                    <p>d) Color scheme</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Effect when changing slides</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">46. You can automate slide show timings. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">47. Handouts are printed versions of slides. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">48. What is the minimum zoom in PowerPoint?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) 10%</p>
+                    <p>b) 25%</p>
+                    <p>c) 50%</p>
+                    <p>d) 100%</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) 10%</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">49. End key moves to the end of the line. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">50. Slide Sorter view shows thumbnails. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Database Management Systems */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Database Management Systems</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">51. What is a database?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Organized collection of data</p>
+                    <p>b) Word document</p>
+                    <p>c) Spreadsheet</p>
+                    <p>d) Presentation</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Organized collection of data</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">52. A table consists of fields and records. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">53. What is a query?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Request for data</p>
+                    <p>b) Form</p>
+                    <p>c) Report</p>
+                    <p>d) Table</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Request for data</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">54. Reports summarize data. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">55. Forms are used for data entry. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">56. You can sort tables in databases. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">57. Field types include text, number, date. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">58. Wizards help create queries. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">59. You can format reports. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">60. Primary key uniquely identifies records. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Cyber Security */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Cyber Security</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">61. What is confidentiality in security?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Data accessible only to authorized</p>
+                    <p>b) Data availability</p>
+                    <p>c) Data integrity</p>
+                    <p>d) Data storage</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Data accessible only to authorized</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">62. Strong passwords protect accounts. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">63. What is phishing?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Fraudulent attempt to obtain info</p>
+                    <p>b) Virus</p>
+                    <p>c) Worm</p>
+                    <p>d) Spyware</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Fraudulent attempt to obtain info</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">64. HTTPS indicates secure website. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">65. Malware includes viruses and trojans. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">66. Netiquette refers to online etiquette. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">67. Software licensing is about legal use. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">68. IT Act 2000 governs cyber laws in India. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">69. Cookies store user data. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">70. Private browsing doesn't save history. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* PC Maintenance & Troubleshooting */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">PC Maintenance & Troubleshooting</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">71. What is antivirus software for?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Protecting from viruses</p>
+                    <p>b) Cleaning dust</p>
+                    <p>c) Upgrading hardware</p>
+                    <p>d) Installing programs</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Protecting from viruses</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">72. Disk cleanup removes unnecessary files. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">73. What is defragmentation?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Organizing fragmented files</p>
+                    <p>b) Deleting files</p>
+                    <p>c) Scanning virus</p>
+                    <p>d) Updating OS</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Organizing fragmented files</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">74. Safe mode is for troubleshooting. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">75. Updating OS improves security. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">76. CCleaner is a maintenance tool. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">77. Check cables for hardware issues. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">78. Uninstall unused software to free space. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">79. Restart solves many problems. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">80. Clean peripherals regularly. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Networking and Troubleshooting */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Networking and Troubleshooting</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">81. What is LAN?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Local Area Network</p>
+                    <p>b) Wide Area Network</p>
+                    <p>c) Metropolitan Area Network</p>
+                    <p>d) Personal Area Network</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Local Area Network</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">82. Wi-Fi is wireless networking. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">83. What is ISP?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) Internet Service Provider</p>
+                    <p>b) Internet Search Protocol</p>
+                    <p>c) Internal System Provider</p>
+                    <p>d) Information Service Protocol</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Internet Service Provider</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">84. TCP/IP is a network protocol. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">85. URL is Uniform Resource Locator. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">86. Switch connects devices in network. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">87. IPv6 has more addresses than IPv4. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">88. Router connects different networks. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">89. Instant Messaging is for real-time chat. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">90. Network troubleshooting includes checking connections. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Latest trends in IECT & e-Governance and Application of Digital Financial Services */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Latest Trends in IECT, e-Governance & Digital Financial Services</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">91. What is cloud computing?</p>
+                  <div className="ml-6 space-y-1">
+                    <p>a) On-demand computing resources</p>
+                    <p>b) Local storage</p>
+                    <p>c) Hardware upgrade</p>
+                    <p>d) Software installation</p>
+                  </div>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) On-demand computing resources</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">92. SaaS is Software as a Service. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">93. Digital signature verifies authenticity. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">94. e-Governance improves service delivery. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">95. PMJDY is for financial inclusion. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Soft Skills */}
+            <section className="mb-8 page-break">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Soft Skills</h3>
+              <div className="space-y-4">
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">96. Effective communication involves clarity. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">97. Active listening is important. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">98. Corporate culture affects behavior. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">99. Pronunciation impacts communication. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+                <div className="mb-4">
+                  <p className="font-bold text-gray-900 mb-2">100. Soft skills include writing and speaking. (True/False)</p>
+                  <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Additional True/False Questions */}
+            <section className="mb-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Additional True/False Questions</h3>
+              <div className="space-y-4">
+                {/* Add more if needed, but since 100 reached, optional */}
+              </div>
+            </section>
+
+            {/* Footer */}
+            <div className="mt-12 pt-6 border-t-2 border-gray-300 text-center text-gray-600">
+              <p className="font-semibold">Total Questions: 100</p>
+              <p className="mt-2 text-sm">Prepared for CCC PLUS Examination</p>
+              <p className="mt-2 text-sm">&copy; 2025 NIELIT. All rights reserved.</p>
+            </div>
+          </div>
+
+          {/* Print Button */}
+          <div className="no-print mt-8 text-center">
+            <button 
+              onClick={() => window.print()}
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Print/Save as PDF
+            </button>
+            <p className="mt-4 text-sm text-gray-600">
+              Click the Print button or press Ctrl+P to save as PDF or print this document
+            </p>
+          </div>
+        </div>
+      );
+    }
+
+    // Render the component
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<CCCQuestionsDoc />);
+  </script>
+</body>
+</html>
