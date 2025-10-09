@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CCC PLUS — Question Sets</title>
+  <style>
+    :root{--bg:#f5f7fb;--card:#ffffff;--accent:#2b6cb0;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:var(--bg);margin:0;padding:40px}
+    .wrap{max-width:900px;margin:0 auto;background:var(--card);padding:30px;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,50,0.06)}
+    header{text-align:center;margin-bottom:24px}
+    header h1{margin:0;font-size:1.6rem;color:#123}
+    header p{color:var(--muted);margin-top:6px}
+    .sets{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin:28px 0}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.9),#fff);border:1px solid #e6edf6;padding:22px;width:260px;border-radius:10px;text-align:left}
+    .card h2{margin:0 0 8px 0;font-size:1.05rem;color:#0b3b66}
+    .card p{margin:0 0 12px 0;color:var(--muted);font-size:0.95rem}
+    .links{display:flex;gap:8px}
+    .links a{flex:1;padding:10px 12px;border-radius:6px;text-decoration:none;text-align:center;font-weight:600;border:1px solid transparent}
+    .links a.primary{background:var(--accent);color:#fff}
+    .links a.secondary{background:#eef6ff;color:var(--accent);border-color:#d6e9ff}
+    footer{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid #eef3f7;margin-top:30px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo img{height:44px}
+    .copyright{color:var(--muted);font-size:0.95rem}
+    @media (max-width:600px){.card{width:100%}.sets{flex-direction:column;gap:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>CCC PLUS — Question Bank</h1>
+      <p>Select a set to open the full question paper (each link opens the respective HTML file).</p>
+    </header>
+
+    <div class="sets">
+      <div class="card">
+        <h2>Set 1</h2>
+        <p>Complete question paper for Set 1 — computer fundamentals, OS, word processing, spreadsheets, internet.</p>
+        <div class="links">
+          <a class="primary" href="set1.html">Open Set 1</a>
+          <a class="secondary" href="set1.html" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Set 2</h2>
+        <p>Complete question paper for Set 2 — alternate variation of the question bank.</p>
+        <div class="links">
+          <a class="primary" href="set2.html">Open Set 2</a>
+          <a class="secondary" href="set2.html" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Set 3</h2>
+        <p>Complete question paper for Set 3 — another variation for practice and revision.</p>
+        <div class="links">
+          <a class="primary" href="set3.html">Open Set 3</a>
+          <a class="secondary" href="set3.html" download>Download</a>
+        </div>
+      </div>
+    </div> 
+
+    <footer>
+      <div class="logo">
+        <!-- Replace 'NIELIT_logo.jpg' with the actual logo file or an absolute URL -->
+        <img src="NIELIT_logo.jpg" alt="NIELIT logo">
+        <div>
+          <strong>NIELIT</strong>
+          <div style="font-size:0.85rem;color:var(--muted)">National Institute of Electronics & Information Technology</div>
+        </div>
+      </div>
+
+      <div class="copyright">&copy; NIELIT 2025</div>
+    </footer>
+  </div>
+</body>
+</html>
