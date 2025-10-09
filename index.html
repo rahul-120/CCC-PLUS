@@ -1,0 +1,914 @@
+import React from 'react';
+
+export default function CCCQuestionsDoc() {
+  return (
+    <div className="max-w-4xl mx-auto p-8 bg-white">
+      <style>{`
+        @media print {
+          .no-print { display: none; }
+          body { background: white; }
+        }
+      `}</style>
+      
+      <div className="mb-6 text-center border-b-2 border-gray-800 pb-4">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">CCC PLUS EXAMINATION</h1>
+        <h2 className="text-xl font-semibold text-gray-700">Question Bank</h2>
+      </div>
+
+      <div className="space-y-6">
+        {/* Computer Fundamentals Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Computer Fundamentals</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">1. What is the full form of CPU?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Central Processing Unit</p>
+                <p>b) Computer Processing Unit</p>
+                <p>c) Central Program Unit</p>
+                <p>d) Common Processing Unit</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Central Processing Unit</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">2. Which part of the computer is the "brain"?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Memory</p>
+                <p>b) ALU</p>
+                <p>c) CPU</p>
+                <p>d) Monitor</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) CPU</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">3. ALU performs which of the following operations?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Arithmetic operations</p>
+                <p>b) Logical operations</p>
+                <p>c) Both a and b</p>
+                <p>d) Storage operations</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Both a and b</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">4. Which of these is a non-volatile memory?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) RAM</p>
+                <p>b) ROM</p>
+                <p>c) Cache</p>
+                <p>d) Register</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) ROM</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">5. What is the full form of RAM?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Random Access Memory</p>
+                <p>b) Read Access Memory</p>
+                <p>c) Randomly Allocated Memory</p>
+                <p>d) Readily Available Memory</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Random Access Memory</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">6. A Hard disk is a type of:</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Primary memory</p>
+                <p>b) Secondary memory</p>
+                <p>c) Volatile memory</p>
+                <p>d) Both a and c</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Secondary memory</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">7. What is the smallest unit of data in a computer?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Byte</p>
+                <p>b) Bit</p>
+                <p>c) Nibble</p>
+                <p>d) Kilobyte</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Bit</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">8. Eight bits make up one ________.</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Kilobyte</p>
+                <p>b) Megabyte</p>
+                <p>c) Byte</p>
+                <p>d) Gigabyte</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Byte</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">9. Which of the following is an input device?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Printer</p>
+                <p>b) Mouse</p>
+                <p>c) Monitor</p>
+                <p>d) Speaker</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Mouse</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">10. What is the main function of a printer?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) To input data</p>
+                <p>b) To process data</p>
+                <p>c) To store data</p>
+                <p>d) To produce a hard copy</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: d) To produce a hard copy</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">11. The term "hardware" refers to:</p>
+              <div className="ml-6 space-y-1">
+                <p>a) The physical components of a computer</p>
+                <p>b) The set of instructions that run on a computer</p>
+                <p>c) The data stored on a computer</p>
+                <p>d) The users of a computer</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) The physical components of a computer</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">12. The first calculating device was the Abacus. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">13. Which generation of computers used Integrated Circuits (IC)?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) First</p>
+                <p>b) Second</p>
+                <p>c) Third</p>
+                <p>d) Fourth</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Third</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">14. A Nibble is equal to 4 bits. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">15. SRAM stands for Static RAM. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">16. The motherboard is also known as the System Board. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">17. What is the full form of GUI?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) General User Interface</p>
+                <p>b) Graphical User Interface</p>
+                <p>c) Graphic Utility Information</p>
+                <p>d) Group User Instruction</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Graphical User Interface</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">18. What is the popular method of studying without going to a classroom?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Income-learning</p>
+                <p>b) Isolated learning</p>
+                <p>c) E-learning</p>
+                <p>d) Close learning</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) E-learning</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">19. What is the full form of ISP?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Indian Service Point</p>
+                <p>b) International Service Point</p>
+                <p>c) Internet Service Provider</p>
+                <p>d) None of the above</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Internet Service Provider</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">20. In which topology is a node a central hub?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Bus</p>
+                <p>b) Ring</p>
+                <p>c) Star</p>
+                <p>d) Tree</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Star</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Operating System Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Operating System and File Management</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">21. What is the use of an operating system?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) To manage hardware and software resources</p>
+                <p>b) To process data</p>
+                <p>c) To create documents</p>
+                <p>d) To connect to the Internet</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) To manage hardware and software resources</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">22. Which key combination is used to reboot a computer?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Ctrl + Alt + Del</p>
+                <p>b) Ctrl + B + E</p>
+                <p>c) Alt + F4</p>
+                <p>d) Ctrl + Shift + Esc</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Ctrl + Alt + Del</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">23. The Recycle Bin stores deleted files temporarily. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">24. Pressing Shift + Delete will permanently delete a file. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">25. The file extension is used to identify the file type. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">26. Right-clicking on the Windows desktop will open a context-sensitive menu. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">27. The ability of a computer to think, learn, and argue is called Artificial Intelligence. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">28. Which of the following is an example of an Operating System?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) MS Office</p>
+                <p>b) Windows</p>
+                <p>c) LibreOffice</p>
+                <p>d) Photoshop</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Windows</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">29. To open a file, what is the keyboard shortcut?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Ctrl + O</p>
+                <p>b) Ctrl + S</p>
+                <p>c) Ctrl + N</p>
+                <p>d) Ctrl + P</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Ctrl + O</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">30. To undo the last action, what is the shortcut key?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Ctrl + Y</p>
+                <p>b) Ctrl + Z</p>
+                <p>c) Ctrl + A</p>
+                <p>d) Ctrl + S</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Ctrl + Z</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Word Processing Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Word Processing (LibreOffice Writer/MS Word)</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">31. What is the word processing application in LibreOffice?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Impress</p>
+                <p>b) Draw</p>
+                <p>c) Calc</p>
+                <p>d) Writer</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: d) Writer</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">32. What is the default file extension of a Word document?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) .txt</p>
+                <p>b) .doc or .docx</p>
+                <p>c) .xls or .xlsx</p>
+                <p>d) .ppt or .pptx</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) .doc or .docx</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">33. Which key combination is used to copy text?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Ctrl + C</p>
+                <p>b) Ctrl + X</p>
+                <p>c) Ctrl + V</p>
+                <p>d) Ctrl + P</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Ctrl + C</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">34. The keyboard shortcut for bold text is Ctrl + B. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">35. The keyboard shortcut for Italic text is Ctrl + I. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">36. The default alignment for numbers typed in a cell is Left-aligned. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: False</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">37. What is the keyboard shortcut to force a page break?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Ctrl + Enter</p>
+                <p>b) F1</p>
+                <p>c) Ctrl + P</p>
+                <p>d) Ctrl + B</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Ctrl + Enter</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">38. In which menu does the "change case" command appear?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Insert</p>
+                <p>b) Format</p>
+                <p>c) Tools</p>
+                <p>d) View</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Format</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">39. What is the full form of PDF?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Personal Document File</p>
+                <p>b) Public Document Format</p>
+                <p>c) Portable Document Format</p>
+                <p>d) Print Document File</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Portable Document Format</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">40. The Mail Merge feature is used to send personalized letters to multiple recipients. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Spreadsheet Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Spreadsheet (LibreOffice Calc/MS Excel)</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">41. In Calc Spreadsheet, data is organized in rows and columns. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">42. What is the function of the SUM function in a spreadsheet?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) To find the average of numbers</p>
+                <p>b) To add up a range of numbers</p>
+                <p>c) To multiply numbers</p>
+                <p>d) To find the maximum number</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) To add up a range of numbers</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">43. A cell is the intersection of a row and a column. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">44. The keyboard shortcut Ctrl + P opens the print dialog box. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">45. When you create a chart on a separate sheet in the same workbook, it is called a chart sheet. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">46. The default file extension for a LibreOffice Calc file is .ods. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">47. What will be the value of =QUOTIENT(509, 7)?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) 70</p>
+                <p>b) 72</p>
+                <p>c) 72.71</p>
+                <p>d) 73</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) 72</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">48. What is the minimum zoom size in LibreOffice Impress?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) 5%</p>
+                <p>b) 10%</p>
+                <p>c) 20%</p>
+                <p>d) 50%</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) 5%</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">49. The keyboard shortcut to go to the beginning of a line in Impress is Home. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">50. What controls all the main slide control tasks for your presentation?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Task Panel</p>
+                <p>b) Task Bar</p>
+                <p>c) Control Panel</p>
+                <p>d) None of the above</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Task Panel</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Internet Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Internet and Communication</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">51. What is the full form of URL?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Uniform Resource Link</p>
+                <p>b) Universal Resource Link</p>
+                <p>c) Uniform Resource Locator</p>
+                <p>d) Universal Resource Locator</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Uniform Resource Locator</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">52. Which protocol is used to send emails?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) HTTP</p>
+                <p>b) SMTP</p>
+                <p>c) FTP</p>
+                <p>d) TCP</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) SMTP</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">53. What is a web browser?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) A device to connect to the Internet</p>
+                <p>b) A software application for accessing websites</p>
+                <p>c) A tool to search for information</p>
+                <p>d) A type of computer virus</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) A software application for accessing websites</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">54. HTTP uses which standard port address?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) 80</p>
+                <p>b) 91</p>
+                <p>c) 75</p>
+                <p>d) 35</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) 80</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">55. What is the full form of WWW?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) World Wide Web</p>
+                <p>b) World Wide Window</p>
+                <p>c) Web World Wide</p>
+                <p>d) None of the above</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) World Wide Web</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">56. Who is known as the father of the World Wide Web?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Charles Babbage</p>
+                <p>b) Tim Berners-Lee</p>
+                <p>c) Bill Gates</p>
+                <p>d) Steve Jobs</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Tim Berners-Lee</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">57. A search engine is a tool to search for information on the Internet. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">58. What is required for e-mail?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Computer</p>
+                <p>b) Internet connection</p>
+                <p>c) Both a and b</p>
+                <p>d) Envelopes and tickets</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Both a and b</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">59. What is the main use of a blog?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Instant messaging</p>
+                <p>b) Personal online journal</p>
+                <p>c) Online shopping</p>
+                <p>d) Sending emails</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Personal online journal</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">60. What would you use for instant communication with a friend?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Instant Messaging</p>
+                <p>b) E-mail</p>
+                <p>c) Usenet</p>
+                <p>d) Blog</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Instant Messaging</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Digital Financial Services Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Digital Financial Services and Cybersecurity</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">61. What is the full form of UPI?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Universal Payment Interface</p>
+                <p>b) Unified Payments Interface</p>
+                <p>c) Uniform Payments Interface</p>
+                <p>d) United Payments Interface</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Unified Payments Interface</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">62. What is an example of a digital wallet?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Google Pay</p>
+                <p>b) Paytm</p>
+                <p>c) PhonePe</p>
+                <p>d) All of the above</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: d) All of the above</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">63. Phishing is a type of online fraud. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">64. A firewall is a network security system that monitors and controls incoming and outgoing network traffic. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">65. What is the full form of OSS?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Open Source Software</p>
+                <p>b) Original Source Software</p>
+                <p>c) Operating System Software</p>
+                <p>d) Online Security System</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Open Source Software</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">66. What does cyber security refer to?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Protecting data from unauthorized access</p>
+                <p>b) Protecting your computer from viruses</p>
+                <p>c) Protecting your identity online</p>
+                <p>d) All of the above</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: d) All of the above</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">67. WDACC stands for World Day Against Cyber Censorship. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">68. What is e-Commerce?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Electronic communication</p>
+                <p>b) Electronic mail</p>
+                <p>c) Electronic business</p>
+                <p>d) Electronic buying and selling</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: d) Electronic buying and selling</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">69. What is the full form of AEPS?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Aadhaar Enabled Payment System</p>
+                <p>b) All Electronic Payment System</p>
+                <p>c) Automated Entry Payment System</p>
+                <p>d) Advanced Electronic Payment Service</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: a) Aadhaar Enabled Payment System</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">70. Which of the following is an example of antivirus software?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Photoshop</p>
+                <p>b) Google Chrome</p>
+                <p>c) Quick Heal</p>
+                <p>d) Microsoft Word</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: c) Quick Heal</p>
+            </div>
+          </div>
+        </section>
+
+        {/* General and Miscellaneous Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">General and Miscellaneous</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">71. What is the area of a computer that holds processed data from a temporary room?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) CPU</p>
+                <p>b) Memory</p>
+                <p>c) Storage</p>
+                <p>d) File</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Memory</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">72. What are the basic operations performed by a computer?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Arithmetic operation</p>
+                <p>b) Logical operation</p>
+                <p>c) Storage and retrieval</p>
+                <p>d) All of the above</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: d) All of the above</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">73. Which company started the personal computer industry?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Apple</p>
+                <p>b) IBM</p>
+                <p>c) HCL</p>
+                <p>d) Compaq</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) IBM</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">74. The ability to connect face-to-face with people living far away is called Video Conferencing. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">75. Social networking sites like Facebook, Twitter, and Google+ are used for online shopping. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: False</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">76. What is a modem?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) A software program</p>
+                <p>b) A hardware device that allows a computer to connect to the Internet</p>
+                <p>c) A type of computer virus</p>
+                <p>d) A part of the CPU</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) A hardware device that allows a computer to connect to the Internet</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">77. The term "peripheral" refers to any external device that connects to a computer. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">78. What is the purpose of ZIP?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) To create a new file</p>
+                <p>b) To compress a file</p>
+                <p>c) To rename a file</p>
+                <p>d) To permanently delete a file</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) To compress a file</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">79. What does the Ctrl + Y key combination do?</p>
+              <div className="ml-6 space-y-1">
+                <p>a) Undo</p>
+                <p>b) Redo</p>
+                <p>c) Copy</p>
+                <p>d) Paste</p>
+              </div>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: b) Redo</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">80. A terminal is required when more than one person uses a central computer at the same time. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+          </div>
+        </section>
+
+        {/* True/False Section */}
+        <section className="mb-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 bg-gray-100 p-2 rounded">Additional True/False Questions</h3>
+          
+          <div className="space-y-4">
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">81. The first computer was the Abacus. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">82. MSI stands for Medium-Scale Integration. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">83. The CPU is the brain of the computer. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">84. ROM is a permanent memory. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">85. RAM is a temporary memory. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">86. A Router is a device that connects two or more different networks. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">87. A firewall is a type of software. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">88. You can have multiple email accounts. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">89. A virus is a human-made computer program. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">90. A placeholder is an area on a slide that holds text. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">91. The shortcut key for help is F1. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">92. Ctrl + B is used for bolding text. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">93. The Trash is another name for the Recycle Bin. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">94. Tim Berners-Lee is the father of the World Wide Web. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">95. The keyboard shortcut Ctrl + Z is used to undo an action. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">96. IPv6 is an improvement over IPv4. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">97. The full form of URL is Uniform Resource Link. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: False</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">98. General Insurance covers fire, theft, and burglary. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">99. A spreadsheet is used for creating presentations. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: False</p>
+            </div>
+
+            <div className="mb-4">
+              <p className="font-bold text-gray-900 mb-2">100. E-learning is a form of online education. (True/False)</p>
+              <p className="ml-6 mt-2 text-green-700 font-semibold">Answer: True</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <div className="mt-12 pt-6 border-t-2 border-gray-300 text-center text-gray-600">
+          <p className="font-semibold">Total Questions: 100</p>
+          <p className="mt-2 text-sm">Prepared for CCC PLUS Examination</p>
+        </div>
+      </div>
+
+      {/* Print Button */}
+      <div className="no-print mt-8 text-center">
+        <button 
+          onClick={() => window.print()}
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+        >
+          Print Document
+        </button>
+        <p className="mt-4 text-sm text-gray-600">
+          Click the Print button or press Ctrl+P to save as PDF or print this document
+        </p>
+      </div>
+    </div>
+  );
+}
