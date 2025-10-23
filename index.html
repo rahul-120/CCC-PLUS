@@ -3,62 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CCC PLUS — Question Sets</title>
+  <title>CCC PLUS — Question Sets & Practicals</title>
   <style>
-    :root{--bg:#f5f7fb;--card:#ffffff;--accent:#2b6cb0;--muted:#666}
+    :root{--bg:#f5f7fb;--card:#ffffff;--accent:#2b6cb0;--accent-green:#16a34a;--muted:#666}
     *{box-sizing:border-box}
     body{font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:var(--bg);margin:0;padding:40px}
     .wrap{max-width:900px;margin:0 auto;background:var(--card);padding:30px;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,50,0.06)}
     header{text-align:center;margin-bottom:24px}
     header h1{margin:0;font-size:1.6rem;color:#123}
     header p{color:var(--muted);margin-top:6px}
+    .section-title{font-size:1.3rem;color:#0b3b66;margin:32px 0 16px 0;padding-bottom:8px;border-bottom:2px solid #e6edf6}
     .sets{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin:28px 0}
     .card{background:linear-gradient(180deg,rgba(255,255,255,0.9),#fff);border:1px solid #e6edf6;padding:22px;width:260px;border-radius:10px;text-align:left}
     .card h2{margin:0 0 8px 0;font-size:1.05rem;color:#0b3b66}
     .card p{margin:0 0 12px 0;color:var(--muted);font-size:0.95rem}
     .links{display:flex;gap:8px}
-    .links a{flex:1;padding:10px 12px;border-radius:6px;text-decoration:none;text-align:center;font-weight:600;border:1px solid transparent}
+    .links a{flex:1;padding:10px 12px;border-radius:6px;text-decoration:none;text-align:center;font-weight:600;border:1px solid transparent;font-size:0.9rem}
     .links a.primary{background:var(--accent);color:#fff}
     .links a.secondary{background:#eef6ff;color:var(--accent);border-color:#d6e9ff}
+    .links a.practical{background:var(--accent-green);color:#fff}
+    .links a.practical-secondary{background:#f0fdf4;color:var(--accent-green);border-color:#bbf7d0}
+    .card.practical{border-left:4px solid var(--accent-green)}
     footer{display:flex;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid #eef3f7;margin-top:30px}
     .logo{display:flex;gap:12px;align-items:center}
     .logo img{height:44px}
     .copyright{color:var(--muted);font-size:0.95rem}
-    @media (max-width:600px){.card{width:100%}.sets{flex-direction:column;gap:12px}}
+    @media (max-width:600px){.card{width:100%}.sets{flex-direction:column;gap:12px}.footer{flex-direction:column;gap:12px;text-align:center}}
   </style>
   <meta name="google-site-verification" content="9DhRNmG-c7eq_HNFFaSoL2TYo1imy681X-pLsAcnx-Q" />
   <!-- Primary Meta Tags -->
-  <title>CCC PLUS Examination Question Bank | Free Practice MCQs by NIELIT</title>
-  <meta name="description" content="Free CCC PLUS Examination Question Bank by NIELIT – 100+ practice questions with answers on Computer Fundamentals, Operating Systems, Word Processing, Spreadsheets, Internet, Cybersecurity & Digital Financial Services. Ideal for NIELIT CCC+ exam preparation.">
-  <meta name="keywords" content="CCC PLUS, CCC PLUS question bank, CCC PLUS exam 2025, NIELIT CCC+ questions, free CCC PLUS mock test, CCC PLUS MCQ with answers, CCC PLUS practice set, computer literacy exam, digital financial services MCQ, cybersecurity questions, LibreOffice Writer, LibreOffice Calc, UPI questions, NIELIT exam preparation, CCC online test, CCC study material, Rahul NIELIT, CCC PLUS PDF, CCC exam questions, computer course NIELIT">
+  <title>CCC PLUS Examination Question Bank & Practicals | Free Practice MCQs by NIELIT</title>
+  <meta name="description" content="Free CCC PLUS Examination Question Bank & Practical Files by NIELIT – 100+ practice questions with answers on Computer Fundamentals, Operating Systems, Word Processing, Spreadsheets, Internet, Cybersecurity & Digital Financial Services. Ideal for NIELIT CCC+ exam preparation.">
+  <meta name="keywords" content="CCC PLUS, CCC PLUS question bank, CCC PLUS exam 2025, NIELIT CCC+ questions, free CCC PLUS mock test, CCC PLUS MCQ with answers, CCC PLUS practice set, computer literacy exam, digital financial services MCQ, cybersecurity questions, LibreOffice Writer, LibreOffice Calc, UPI questions, NIELIT exam preparation, CCC online test, CCC study material, Rahul NIELIT, CCC PLUS PDF, CCC exam questions, computer course NIELIT, CCC practical files">
   <meta name="author" content="Rahul | NIELIT CCC PLUS Educator">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rahul-120.github.io/CCC-PLUS/">
-  <meta property="og:title" content="CCC PLUS Examination Question Bank | Free Practice MCQs by NIELIT">
-  <meta property="og:description" content="100+ expert-curated CCC PLUS exam questions with answers—perfect for NIELIT certification prep. Covers OS, Word, Excel, Internet, UPI, Cybersecurity & more.">
+  <meta property="og:title" content="CCC PLUS Examination Question Bank & Practicals | Free Practice MCQs by NIELIT">
+  <meta property="og:description" content="100+ expert-curated CCC PLUS exam questions with answers and practical files—perfect for NIELIT certification prep. Covers OS, Word, Excel, Internet, UPI, Cybersecurity & more.">
   <meta property="og:image" content="https://rahul-120.github.io/CCC-PLUS/og-image.jpg">
   <meta property="og:site_name" content="CCC PLUS Question Bank">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://rahul-120.github.io/CCC-PLUS/">
-  <meta name="twitter:title" content="CCC PLUS Examination Question Bank | Free Practice MCQs by NIELIT">
-  <meta name="twitter:description" content="100+ expert-curated CCC PLUS exam questions with answers—perfect for NIELIT certification prep. Covers OS, Word, Excel, Internet, UPI, Cybersecurity & more.">
+  <meta name="twitter:title" content="CCC PLUS Examination Question Bank & Practicals | Free Practice MCQs by NIELIT">
+  <meta name="twitter:description" content="100+ expert-curated CCC PLUS exam questions with answers and practical files—perfect for NIELIT certification prep. Covers OS, Word, Excel, Internet, UPI, Cybersecurity & more.">
   <meta name="twitter:image" content="https://rahul-120.github.io/CCC-PLUS/assets/img/NIELIT_logo.jpg">
 
   <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="assets/img/NIELIT_logo.jpg">
+  <link rel="icon" type="image/x-icon" href="assets/img/NIELIT_logo.jpg">
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>CCC PLUS — Question Bank</h1>
-      <p>Select a set to open the full question paper (each link opens the respective PDF file).</p>
+      <h1>CCC PLUS — Question Bank & Practicals</h1>
+      <p>Select a set to open the full question paper or download practical files for hands-on practice.</p>
     </header>
 
+    <h3 class="section-title">📝 Question Sets</h3>
     <div class="sets">
       <div class="card">
         <h2>Set 1</h2>
@@ -88,9 +93,64 @@
       </div>
     </div> 
 
+    <h3 class="section-title">Practical Files</h3>
+    <div class="sets">
+      <div class="card practical">
+        <h2>LibreOffice Writer</h2>
+        <p>Practice files for word processing tasks — formatting, tables, mail merge, and document creation.</p>
+        <div class="links">
+          <a class="practical" href="practicals/writer.html">View Tasks</a>
+          <a class="practical-secondary" href="practicals/writer.zip" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card practical">
+        <h2>LibreOffice Calc</h2>
+        <p>Spreadsheet exercises — formulas, functions, charts, data analysis, and pivot tables.</p>
+        <div class="links">
+          <a class="practical" href="practicals/calc.html">View Tasks</a>
+          <a class="practical-secondary" href="practicals/calc.zip" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card practical">
+        <h2>LibreOffice Impress</h2>
+        <p>Presentation practice files — slide design, animations, transitions, and multimedia integration.</p>
+        <div class="links">
+          <a class="practical" href="practicals/impress.html">View Tasks</a>
+          <a class="practical-secondary" href="practicals/impress.zip" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card practical">
+        <h2>Internet & Email</h2>
+        <p>Practical tasks for web browsing, email management, online safety, and digital communication.</p>
+        <div class="links">
+          <a class="practical" href="practicals/internet.html">View Tasks</a>
+          <a class="practical-secondary" href="practicals/internet.pdf" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card practical">
+        <h2>Digital Finance</h2>
+        <p>Hands-on exercises for UPI, online banking, digital payments, and financial security.</p>
+        <div class="links">
+          <a class="practical" href="practicals/digital-finance.html">View Tasks</a>
+          <a class="practical-secondary" href="practicals/digital-finance.pdf" download>Download</a>
+        </div>
+      </div>
+
+      <div class="card practical">
+        <h2>Complete Practical Pack</h2>
+        <p>Download all practical files in one package — includes all exercises and sample files.</p>
+        <div class="links">
+          <a class="practical" href="practicals/all-practicals.zip" download>Download All</a>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div class="logo">
-        <!-- Replace 'NIELIT_logo.jpg' with the actual logo file or an absolute URL -->
         <img src="assets/img/NIELIT_logo.jpg" alt="NIELIT logo">
         <div>
           <strong>NIELIT</strong>

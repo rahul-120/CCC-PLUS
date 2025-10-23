@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LibreOffice Calc Practicals - CCC PLUS</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#16a34a;
+      --accent-light:#22c55e;
+      --muted:#666;
+      --border:#e6edf6;
+      --code-bg:#f8fafc;
+      --step-bg:#f0fdf4;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+      background:var(--bg);
+      line-height:1.6;
+      color:#222;
+    }
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      padding:20px;
+    }
+    header{
+      background:linear-gradient(135deg,var(--accent),var(--accent-light));
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+      border-radius:12px;
+      margin-bottom:30px;
+      box-shadow:0 4px 12px rgba(22,163,74,0.2);
+    }
+    header h1{font-size:2rem;margin-bottom:8px}
+    header p{font-size:1.1rem;opacity:0.95}
+    .back-btn{
+      display:inline-block;
+      background:rgba(255,255,255,0.2);
+      color:white;
+      padding:10px 20px;
+      border-radius:6px;
+      text-decoration:none;
+      margin-bottom:20px;
+      transition:background 0.3s;
+    }
+    .back-btn:hover{background:rgba(255,255,255,0.3)}
+    .practical{
+      background:var(--card);
+      border-radius:10px;
+      padding:30px;
+      margin-bottom:30px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.06);
+      border-left:4px solid var(--accent);
+    }
+    .practical h2{
+      color:var(--accent);
+      font-size:1.6rem;
+      margin-bottom:12px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .practical h2::before{
+      content:'📊';
+      font-size:1.8rem;
+    }
+    .objective{
+      background:var(--step-bg);
+      padding:15px 20px;
+      border-radius:8px;
+      margin:15px 0;
+      border-left:3px solid var(--accent);
+    }
+    .objective strong{color:var(--accent)}
+    .step{
+      margin:20px 0;
+      padding:15px;
+      background:var(--code-bg);
+      border-radius:8px;
+      border:1px solid var(--border);
+    }
+    .step h3{
+      color:#0b3b66;
+      font-size:1.2rem;
+      margin-bottom:12px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .step h3::before{
+      content:'▶';
+      color:var(--accent);
+      font-size:0.9rem;
+    }
+    .step ol,.step ul{
+      margin-left:25px;
+      margin-top:10px;
+    }
+    .step li{margin:8px 0}
+    .screenshot{
+      max-width:100%;
+      border-radius:8px;
+      margin:15px 0;
+      box-shadow:0 3px 10px rgba(0,0,0,0.15);
+      border:1px solid var(--border);
+      display:block;
+    }
+    .formula{
+      background:#1e293b;
+      color:#22c55e;
+      padding:12px 16px;
+      border-radius:6px;
+      font-family:'Courier New',monospace;
+      margin:10px 0;
+      overflow-x:auto;
+      border-left:3px solid var(--accent);
+    }
+    .note{
+      background:#fef3c7;
+      border-left:4px solid #f59e0b;
+      padding:12px 16px;
+      margin:15px 0;
+      border-radius:6px;
+    }
+    .note::before{
+      content:'💡 ';
+      font-weight:bold;
+    }
+    .result{
+      background:#dcfce7;
+      border-left:4px solid var(--accent);
+      padding:12px 16px;
+      margin:15px 0;
+      border-radius:6px;
+    }
+    .result::before{
+      content:'✓ ';
+      color:var(--accent);
+      font-weight:bold;
+    }
+    .menu-path{
+      background:var(--code-bg);
+      padding:8px 12px;
+      border-radius:4px;
+      font-family:monospace;
+      display:inline-block;
+      margin:5px 0;
+      border:1px solid var(--border);
+    }
+    .download-section{
+      background:linear-gradient(135deg,#f0fdf4,#dcfce7);
+      padding:30px;
+      border-radius:10px;
+      text-align:center;
+      margin:30px 0;
+    }
+    .download-btn{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:15px 30px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:1.1rem;
+      transition:transform 0.2s,box-shadow 0.2s;
+      margin-top:15px;
+    }
+    .download-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 6px 16px rgba(22,163,74,0.3);
+    }
+    footer{
+      text-align:center;
+      padding:30px;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+      margin-top:40px;
+    }
+    @media (max-width:768px){
+      header h1{font-size:1.5rem}
+      .practical{padding:20px}
+      .practical h2{font-size:1.3rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    
+    <header>
+      <h1>LibreOffice Calc Practicals</h1>
+      <p>Master spreadsheet skills with these comprehensive practical exercises</p>
+    </header>
+
+    <!-- Practical 1 -->
+    <div class="practical">
+      <h2>Practical 1: Data Consolidation</h2>
+      
+      <div class="objective">
+        <strong>Objective:</strong> Combine data from two sheets into one summary sheet by items.
+      </div>
+
+      <div class="step">
+        <h3>Step 1: Prepare the Data</h3>
+        <ol>
+          <li>Create a new sheet named <strong>Jan</strong>:
+            <ul>
+              <li>Click the <strong>+</strong> icon at the bottom sheet tab</li>
+              <li>Right-click the new sheet and rename to "Jan"</li>
+            </ul>
+          </li>
+        </ol>
+          <img src="images/Picture1.png" alt="Creating new sheet" class="screenshot">
+          <ol start="2">
+          <li>Enter sales data with columns: Items, Quantity, Amount</li>
+        </ol>
+        <img src="images/Picture2.png" alt="Jan sheet data" class="screenshot">
+        <ol start="3">
+          <li>Create another sheet named <strong>Feb</strong> with similar data</li>
+        </ol>
+        <img src="images/Picture3.png" alt="Feb sheet data" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Create a Consolidated Sheet</h3>
+        <ol>
+          <li>Insert a new sheet and rename it <strong>Consolidated</strong></li>
+          <li>Click in cell <strong>A1</strong> (where combined data will appear)</li>
+        </ol>
+        <img src="images/Picture4.png" alt="Consolidated sheet" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Open the Consolidate Dialog</h3>
+        <ol>
+          <li>Go to menu: <span class="menu-path">Data → Consolidate...</span></li>
+          <li>The Consolidate dialog box will open</li>
+        </ol>
+        <img src="images/Picture5.png" alt="Consolidate dialog" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 4: Add Source Ranges</h3>
+        <ol>
+          <li>Click inside the <strong>Source data range</strong> box</li>
+        </ol>
+        <img src="images/Picture6.png" alt="Source data range box" class="screenshot">
+        <ol start="2">
+          <li>Go to the <strong>Jan</strong> sheet → select the data range (e.g., B8:D11)</li>
+        </ol>
+        <img src="images/Picture7.png" alt="Select Jan range" class="screenshot">
+        <ol start="3">
+          <li>Click <strong>Add</strong> button</li>
+        </ol>
+        <img src="images/Picture8.png" alt="Add Jan range" class="screenshot">
+        <ol start="4">
+          <li>Go to the <strong>Feb</strong> sheet → select data range (e.g., B5:D8)</li>
+          <li>Click <strong>Add</strong> again</li>
+        </ol>
+        <img src="images/Picture9.png" alt="Add Feb range" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 5: Configure Settings</h3>
+        <ol>
+          <li>Under <strong>Function</strong>, select <strong>Sum</strong></li>
+        </ol>
+        <img src="images/Picture10.png" alt="Select Sum function" class="screenshot">
+        <ol start="2">
+          <li>Verify "Copy results to" points to Consolidated sheet</li>
+        </ol>
+        <img src="images/Picture11.png" alt="Output location" class="screenshot">
+        <ol start="3">
+          <li>Click <strong>OK</strong></li>
+        </ol>
+      </div>
+
+      <div class="result">
+        Calc will automatically combine data from both sheets, match items by name, and sum quantities/amounts!
+      </div>
+      <img src="images/Picture12.png" alt="Final consolidated result" class="screenshot">
+    </div>
+
+    <!-- Practical 2 -->
+    <div class="practical">
+      <h2>Practical 2: Macro Function</h2>
+      
+      <div class="objective">
+        <strong>Objective:</strong> Record and run a simple macro that performs formatting automatically.
+      </div>
+
+      <div class="step">
+        <h3>Step 1: Open and Save Spreadsheet</h3>
+        <ol>
+          <li>Open LibreOffice Calc</li>
+        </ol>
+        <img src="images/Picture13.png" alt="Open Calc" class="screenshot">
+        <ol start="2">
+          <li>Save as <strong>Macro_Function.ods</strong></li>
+        </ol>
+        <img src="images/Picture14.png" alt="Save file" class="screenshot">
+        <ol start="3">
+          <li>Enter sample data in the sheet</li>
+        </ol>
+        <img src="images/Picture15.png" alt="Sample data" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Enable Macro Recording</h3>
+        <ol>
+          <li>Go to <span class="menu-path">Tools → Options → LibreOffice → Advanced</span></li>
+          <li>Check <strong>"Enable macro recording (limited)"</strong></li>
+          <li>Click <strong>OK</strong> and restart LibreOffice Calc</li>
+        </ol>
+        <img src="images/Picture16.png" alt="Enable macro recording" class="screenshot">
+        <div class="note">This step is crucial! Macro recording must be enabled first.</div>
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Record the Macro</h3>
+        <ol>
+          <li>Select <span class="menu-path">Tools → Macros → Record Macro</span></li>
+        </ol>
+        <img src="images/Picture17.png" alt="Record macro menu" class="screenshot">
+        <ol start="2">
+          <li>A small floating recorder window will appear</li>
+        </ol>
+        <img src="images/Picture18.png" alt="Recorder window" class="screenshot">
+        <ol start="3">
+          <li>Perform formatting actions:
+            <ul>
+              <li>Select cells A1:B1</li>
+              <li>Make them <strong>Bold</strong></li>
+              <li>Apply <strong>background color</strong></li>
+              <li><strong>Center align</strong> the text</li>
+            </ul>
+          </li>
+          <li>Click <strong>Stop Recording</strong></li>
+        </ol>
+      </div>
+
+      <div class="step">
+        <h3>Step 4: Save the Macro</h3>
+        <ol>
+          <li>In the dialog, choose settings and click <strong>Save</strong></li>
+        </ol>
+        <img src="images/Picture19.png" alt="Save macro dialog" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 5: Run the Macro</h3>
+        <ol>
+          <li>Go to <span class="menu-path">Tools → Macros → Run Macro</span></li>
+          <li>Navigate to your macro and click <strong>Run</strong></li>
+        </ol>
+        <img src="images/Picture20.png" alt="Run macro" class="screenshot">
+        <div class="result">Your header formatting is applied automatically!</div>
+      </div>
+    </div>
+
+    <!-- Practical 3 -->
+    <div class="practical">
+      <h2>Practical 3: Multiple Operations (Student Grading)</h2>
+      
+      <div class="objective">
+        <strong>Objective:</strong> Create a complete student grading system with marks, totals, percentages, grades, and ranks.
+      </div>
+
+      <div class="step">
+        <h3>Grading Scale</h3>
+        <ul>
+          <li>≥75% → A1</li>
+          <li>60-74.99% → A2</li>
+          <li>45-59.99% → B1</li>
+          <li>33-44.99% → B2</li>
+          <li>&lt;33% → Fail</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <h3>Formula 1: Total Marks (Column G)</h3>
+        <p>In cell G2:</p>
+        <div class="formula">=SUM(B2:F2)</div>
+        <img src="images/Picture21.png" alt="Total formula" class="screenshot">
+        <p>Drag down through G11:</p>
+        <img src="images/Picture22.png" alt="Total filled down" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Formula 2: Percentage (Column H)</h3>
+        <p>In cell H2:</p>
+        <div class="formula">=ROUND(G2/500*100,2)</div>
+        <img src="images/Picture23.png" alt="Percentage formula" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Formula 3: Grade (Column I)</h3>
+        <p>In cell I2 (nested IF):</p>
+        <div class="formula">=IF(H2>=75,"A1",IF(H2>=60,"A2",IF(H2>=45,"B1",IF(H2>=33,"B2","Fail"))))</div>
+        <img src="images/Picture24.png" alt="Grade formula" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Formula 4: Rank (Column J)</h3>
+        <p>In cell J2:</p>
+        <div class="formula">=RANK(G2,$G$2:$G$11,0)</div>
+        <div class="note">For LibreOffice use RANK; for Excel use RANK.EQ</div>
+        <img src="images/Picture25.png" alt="Rank formula" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Formula 5: Remark (Column K)</h3>
+        <p>In cell K2 (to flag if any subject &lt; 33):</p>
+        <div class="formula">=IF(OR(B2<33,C2<33,D2<33,E2<33,F2<33),"Needs Attention","OK")</div>
+        <img src="images/Picture26.png" alt="Remark formula" class="screenshot">
+      </div>
+
+      <div class="result">
+        Complete grading system with automatic calculations!
+      </div>
+    </div>
+
+    <!-- Practical 4 -->
+    <div class="practical">
+      <h2>Practical 4: Create Subtotals</h2>
+      
+      <div class="objective">
+        <strong>Objective:</strong> Sort sales data by category and use Subtotal feature for category-wise totals.
+      </div>
+
+      <div class="step">
+        <h3>Step 1: Enter Sales Data</h3>
+        <img src="images/Picture27.png" alt="Sales data" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Sort the Data</h3>
+        <ol>
+          <li>Select your data range</li>
+        </ol>
+        <img src="images/Picture28.png" alt="Select data" class="screenshot">
+        <ol start="2">
+          <li>Go to <span class="menu-path">Data → Sort</span></li>
+        </ol>
+        <img src="images/Picture29.png" alt="Sort menu" class="screenshot">
+        <ol start="3">
+          <li>Choose <strong>Category</strong> as Sort Key and click <strong>OK</strong></li>
+        </ol>
+        <img src="images/Picture30.png" alt="Sort dialog" class="screenshot">
+        <div class="note">Sorting by grouping column is REQUIRED before applying subtotals</div>
+        <img src="images/Picture31.png" alt="Sorted data" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Apply Subtotals</h3>
+        <ol>
+          <li>Select the data range again</li>
+        </ol>
+        <img src="images/Picture32.png" alt="Select for subtotals" class="screenshot">
+        <ol start="2">
+          <li>Go to <span class="menu-path">Data → Subtotals</span></li>
+        </ol>
+        <img src="images/Picture33.png" alt="Subtotals menu" class="screenshot">
+        <ol start="3">
+          <li>Configure: Group by <strong>Category</strong></li>
+        </ol>
+        <img src="images/Picture34.png" alt="Group by category" class="screenshot">
+        <ol start="4">
+          <li>Calculate subtotals for <strong>Sales</strong>, function <strong>Sum</strong></li>
+        </ol>
+        <img src="images/Picture35.png" alt="Subtotal settings" class="screenshot">
+        <ol start="5">
+          <li>Click <strong>OK</strong></li>
+        </ol>
+        <img src="images/Picture36.png" alt="Apply subtotals" class="screenshot">
+      </div>
+
+      <div class="result">
+        Calc inserts subtotal rows for each category plus Grand Total!
+      </div>
+      <img src="images/Picture37.png" alt="Final subtotals result" class="screenshot">
+    </div>
+
+    <!-- Practical 5 -->
+    <div class="practical">
+      <h2>Practical 5: Scenario Analysis</h2>
+      
+      <div class="objective">
+        <strong>Objective:</strong> Use Scenarios to compare Total Profit under different price assumptions.
+      </div>
+
+      <div class="step">
+        <h3>Problem Setup</h3>
+        <p>Compare three scenarios for product profit:</p>
+        <ul>
+          <li><strong>Normal Case:</strong> Current CP and SP</li>
+          <li><strong>Best Case:</strong> SP +10%, CP -5%</li>
+          <li><strong>Worst Case:</strong> SP -10%, CP +5%</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <h3>Step 1: Setup Data and Formulas</h3>
+        <p>Create table with Product, CP, SP, Quantity, Profit</p>
+        <img src="images/Picture38.png" alt="Initial data" class="screenshot">
+        <p>Profit formula in E2:</p>
+        <div class="formula">=(C2-B2)*D2</div>
+        <p>Fill down to E4:</p>
+        <img src="images/Picture39.png" alt="Profit formula" class="screenshot">
+        <p>Total Profit in E5:</p>
+        <div class="formula">=SUM(E2:E4)</div>
+        <img src="images/Picture40.png" alt="Total profit formula" class="screenshot">
+        <img src="images/Picture41.png" alt="Calculated profit" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Create Normal Case Scenario</h3>
+        <ol>
+          <li>Select range <strong>B2:C4</strong> (CP and SP cells that will change)</li>
+        </ol>
+        <img src="images/Picture42.png" alt="Select scenario range" class="screenshot">
+        <ol start="2">
+          <li>Go to <span class="menu-path">Tools → Scenarios...</span></li>
+          <li>Click <strong>Add</strong></li>
+          <li>Name: <strong>Normal Case</strong></li>
+          <li>Description: Base data</li>
+          <li>Click <strong>OK</strong> to save current values</li>
+        </ol>
+        <img src="images/Picture43.png" alt="Normal case scenario" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Create Best Case Scenario</h3>
+        <ol>
+          <li>Click <strong>Add</strong> again in the Scenarios dialog</li>
+          <li>Name: <strong>Best Case</strong></li>
+          <li>Enter the Best Case values:
+            <ul>
+              <li>Pen: CP = 4.75 (5 × 0.95), SP = 11 (10 × 1.10)</li>
+              <li>Notebook: CP = 28.5 (30 × 0.95), SP = 55 (50 × 1.10)</li>
+              <li>Eraser: CP = 1.9 (2 × 0.95), SP = 4.4 (4 × 1.10)</li>
+            </ul>
+          </li>
+          <li>Click <strong>OK</strong></li>
+        </ol>
+        <img src="images/Picture44.png" alt="Best case scenario" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 4: Create Worst Case Scenario</h3>
+        <ol>
+          <li>Click <strong>Add</strong> once more</li>
+          <li>Name: <strong>Worst Case</strong></li>
+          <li>Enter the Worst Case values:
+            <ul>
+              <li>Pen: CP = 5.25 (5 × 1.05), SP = 9 (10 × 0.90)</li>
+              <li>Notebook: CP = 31.5 (30 × 1.05), SP = 45 (50 × 0.90)</li>
+              <li>Eraser: CP = 2.1 (2 × 1.05), SP = 3.6 (4 × 0.90)</li>
+            </ul>
+          </li>
+          <li>Click <strong>OK</strong></li>
+        </ol>
+        <img src="images/Picture45.png" alt="Worst case scenario" class="screenshot">
+        <img src="images/Picture46.png" alt="All scenarios created" class="screenshot">
+      </div>
+
+      <div class="step">
+        <h3>Step 5: Switch Between Scenarios</h3>
+        <ol>
+          <li>To apply a scenario, simply double-click its name in the Scenarios dialog</li>
+          <li>Watch how the Total Profit in cell E5 changes:
+            <ul>
+              <li><strong>Normal Case:</strong> Original profit values</li>
+              <li><strong>Best Case:</strong> Higher profit (lower costs, higher prices)</li>
+              <li><strong>Worst Case:</strong> Lower profit (higher costs, lower prices)</li>
+            </ul>
+          </li>
+        </ol>
+        <div class="note">You can easily compare different business scenarios by switching between them with a double-click!</div>
+      </div>
+
+      <div class="result">
+        Successfully created scenario analysis to compare profit outcomes under different pricing assumptions!
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 CCC PLUS | LibreOffice Calc Practicals Guide</p>
+      <p>All screenshots and content for educational purposes</p>
+    </footer>
+  </div>
+</body>
+</html>
