@@ -109,6 +109,20 @@
       box-shadow:0 3px 10px rgba(0,0,0,0.15);
       border:1px solid var(--border);
       display:block;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: nearest-neighbor;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .screenshot:hover{
+      transform: scale(1.02);
+    }
+    .screenshot:active{
+      transform: scale(1.5);
+      position: relative;
+      z-index: 1000;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
     }
     .formula{
       background:#1e293b;
@@ -588,6 +602,13 @@
       <div class="result">
         Successfully created scenario analysis to compare profit outcomes under different pricing assumptions!
       </div>
+    </div>
+
+    <!-- Download Section -->
+    <div class="download-section">
+      <h2>📥 Download Complete Practical Manual</h2>
+      <p>Get the full document with all screenshots and detailed instructions</p>
+      <a href="Calc_Practicals.docx" class="download-btn" download>Download DOCX File</a>
     </div>
 
     <footer>
